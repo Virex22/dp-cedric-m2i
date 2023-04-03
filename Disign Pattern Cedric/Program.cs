@@ -2,6 +2,7 @@
 using Patterns.Adapter;
 using Patterns.Singleton;
 using System.Reflection.Metadata.Ecma335;
+using Patterns.AbstractFactory;
 
 class Program
 {
@@ -26,7 +27,20 @@ class Program
             Console.WriteLine(iterator.Item().GetInfo());
             iterator.Next();
         }
+
+        Console.WriteLine("test Abstract Factory");
+        Car electricCar = new Catalogue().CreateElectricVehicleFactory().CreateCar("tuture");
+        Scooter fuelScooter = new Catalogue().CreateFuelVehicleFactory().CreateScooter("scooty");
+        Console.WriteLine("test de la voiture electrique (on remet du carburant et on part !)");
+        electricCar.FillUp();
+        electricCar.Drive();
+        Console.WriteLine("test du scooter à essence (on remet du carburant et on part !)");
+        fuelScooter.FillUp();
+        fuelScooter.Drive();
         
+        
+        
+
     }
     
     static private void ShowAndPrintIDocument(IDocument document,string text)
