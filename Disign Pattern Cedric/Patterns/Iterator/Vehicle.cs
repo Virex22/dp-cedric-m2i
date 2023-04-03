@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Disign_Pattern_Cedric.Patterns.Iterator
+namespace Patterns.Iterator
 {
     public class Vehicle : AbstractElement
     {

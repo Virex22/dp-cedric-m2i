@@ -1,6 +1,5 @@
-﻿using Disign_Pattern_Cedric.Patterns.Iterator;
+﻿using Patterns.Iterator;
 using Patterns.Adapter;
-using Patterns.Iterator;
 using Patterns.Singleton;
 using System.Reflection.Metadata.Ecma335;
 
