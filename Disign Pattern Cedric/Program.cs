@@ -3,6 +3,7 @@ using Patterns.Adapter;
 using Patterns.Singleton;
 using System.Reflection.Metadata.Ecma335;
 using Patterns.AbstractFactory;
+using Patterns.Decorator;
 
 class Program
 {
@@ -37,10 +38,13 @@ class Program
         Console.WriteLine("test du scooter à essence (on remet du carburant et on part !)");
         fuelScooter.FillUp();
         fuelScooter.Drive();
-        
-        
-        
 
+        Console.WriteLine("test Decorator");
+        IVehicleGraphicComponent vehicleView = new ModelDecorator(new BrandDecorator(new VehicleView(), "Peugot"), "208");
+        vehicleView.Show();
+
+        
+        
     }
     
     static private void ShowAndPrintIDocument(IDocument document,string text)
