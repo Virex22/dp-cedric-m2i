@@ -1,7 +1,6 @@
 ﻿using Patterns.Iterator;
 using Patterns.Adapter;
 using Patterns.Singleton;
-using System.Reflection.Metadata.Ecma335;
 using Patterns.AbstractFactory;
 using Patterns.Decorator;
 
@@ -43,8 +42,24 @@ class Program
         IVehicleGraphicComponent vehicleView = new ModelDecorator(new BrandDecorator(new VehicleView(), "Peugot"), "208");
         vehicleView.Show();
 
-        
-        
+        Console.WriteLine("test Observer");
+        Patterns.Observer.Vehicle vehicle = new Patterns.Observer.Vehicle();
+        Patterns.Observer.VehiclePriceView vehiclePriceView = new Patterns.Observer.VehiclePriceView(vehicle);
+        Console.WriteLine("changement du prix à 2000€");
+        vehicle.setPrice(2000);
+        Console.WriteLine("ajout de l'observateur");
+        vehicle.AddObserver(vehiclePriceView);
+        Console.WriteLine("changement du prix à 1500€");
+        vehicle.setPrice(1500);
+        Console.WriteLine("changement de la description");
+        vehicle.setDescription("Voiture pas terrible");
+
+
+
+
+
+
+
     }
     
     static private void ShowAndPrintIDocument(IDocument document,string text)
