@@ -9,8 +9,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        // le tester permet d'afficher les outputs des patterns
         TestingFluent tester = new TestingFluent();
-        
+
         tester
         /*.testSingleton()
         .testAbstractFactory()
@@ -23,9 +24,10 @@ class Program
         .testMemento()
         .testChainOfResponsibility()
         .testProxy()  
-        .testFlyWeight() */
-        .testFacade()
+        .testFlyWeight()
+        .testFacade()  */
         .testStrategy()
+        .testTemplateMethod()
         ;
     } 
 }

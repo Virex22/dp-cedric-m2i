@@ -79,5 +79,10 @@ namespace Patterns.Fluent
             new TestStrategy().Handle();
             return this;
         }
+        public TestingFluent testTemplateMethod()
+        {
+            new TestTemplateMethod().Handle();
+            return this;
+        }
     }
 }
