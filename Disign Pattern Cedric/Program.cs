@@ -18,8 +18,9 @@ class Program
             .testDecorator()
             .testIterator()
             .testObserver()
-            .testBridge()*/
-            .testState()
+            .testBridge()
+            .testState() */
+            .testMemento()
         ;
     } 
 }

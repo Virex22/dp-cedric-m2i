@@ -49,5 +49,10 @@ namespace Patterns.Fluent
             new TestState().Handle();
             return this;
         }
+        public TestingFluent testMemento()
+        {
+            new TestMemento().Handle();
+            return this;
+        }
     }
 }
