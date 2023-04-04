@@ -22,8 +22,9 @@ class Program
         .testState() 
         .testMemento()
         .testChainOfResponsibility()
-        .testProxy()  */
-        .testFlyWeight()
+        .testProxy()  
+        .testFlyWeight() */
+        .testFacade()
         ;
     } 
 }

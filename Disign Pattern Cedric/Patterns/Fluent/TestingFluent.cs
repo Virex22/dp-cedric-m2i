@@ -69,5 +69,10 @@ namespace Patterns.Fluent
             new TestFlyweight().Handle();
             return this;
         }
+        public TestingFluent testFacade()
+        {
+            new TestFacade().Handle();
+            return this;
+        }
     }
 }
