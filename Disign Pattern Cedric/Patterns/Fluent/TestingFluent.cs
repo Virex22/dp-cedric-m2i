@@ -44,5 +44,10 @@ namespace Patterns.Fluent
             new TestObserver().Handle();
             return this;
         }
+        public TestingFluent testState()
+        {
+            new TestState().Handle();
+            return this;
+        }
     }
 }

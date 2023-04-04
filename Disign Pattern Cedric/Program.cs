@@ -10,15 +10,16 @@ class Program
     static void Main(string[] args)
     {
         TestingFluent tester = new TestingFluent();
+        
         tester
-            .testSingleton()
+            /*.testSingleton()
             .testAbstractFactory()
             .testAdapter()
             .testDecorator()
             .testIterator()
             .testObserver()
-
-            .testBridge()
+            .testBridge()*/
+            .testState()
         ;
     } 
 }
