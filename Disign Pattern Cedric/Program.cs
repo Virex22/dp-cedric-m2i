@@ -25,9 +25,10 @@ class Program
         .testChainOfResponsibility()
         .testProxy()  
         .testFlyWeight()
-        .testFacade()  */
+        .testFacade()  
         .testStrategy()
-        .testTemplateMethod()
+        .testTemplateMethod() */
+        .testComposite()
         ;
     } 
 }
