@@ -22,6 +22,7 @@ class Program
         .testState() 
         .testMemento()*/
         .testChainOfResponsibility()
+        .testProxy()
         ;
     } 
 }

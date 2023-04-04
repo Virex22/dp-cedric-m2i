@@ -59,5 +59,10 @@ namespace Patterns.Fluent
             new TestChainOfResponsability().Handle();
             return this;
         }
+        public TestingFluent testProxy()
+        {
+            new TestProxy().Handle();
+            return this;
+        }
     }
 }
