@@ -12,15 +12,16 @@ class Program
         TestingFluent tester = new TestingFluent();
         
         tester
-            /*.testSingleton()
-            .testAbstractFactory()
-            .testAdapter()
-            .testDecorator()
-            .testIterator()
-            .testObserver()
-            .testBridge()
-            .testState() */
-            .testMemento()
+        /*.testSingleton()
+        .testAbstractFactory()
+        .testAdapter()
+        .testDecorator()
+        .testIterator()
+        .testObserver()
+        .testBridge()
+        .testState() 
+        .testMemento()*/
+        .testChainOfResponsibility()
         ;
     } 
 }

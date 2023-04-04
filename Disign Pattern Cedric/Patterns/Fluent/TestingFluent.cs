@@ -54,5 +54,10 @@ namespace Patterns.Fluent
             new TestMemento().Handle();
             return this;
         }
+        public TestingFluent testChainOfResponsibility()
+        {
+            new TestChainOfResponsability().Handle();
+            return this;
+        }
     }
 }
