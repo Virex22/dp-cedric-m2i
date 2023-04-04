@@ -74,5 +74,10 @@ namespace Patterns.Fluent
             new TestFacade().Handle();
             return this;
         }
+        public TestingFluent testStrategy()
+        {
+            new TestStrategy().Handle();
+            return this;
+        }
     }
 }

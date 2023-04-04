@@ -25,6 +25,7 @@ class Program
         .testProxy()  
         .testFlyWeight() */
         .testFacade()
+        .testStrategy()
         ;
     } 
 }
