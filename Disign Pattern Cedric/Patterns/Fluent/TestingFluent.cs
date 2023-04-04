@@ -64,5 +64,10 @@ namespace Patterns.Fluent
             new TestProxy().Handle();
             return this;
         }
+        public TestingFluent testFlyWeight()
+        {
+            new TestFlyweight().Handle();
+            return this;
+        }
     }
 }

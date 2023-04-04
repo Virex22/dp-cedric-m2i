@@ -20,9 +20,10 @@ class Program
         .testObserver()
         .testBridge()
         .testState() 
-        .testMemento()*/
+        .testMemento()
         .testChainOfResponsibility()
-        .testProxy()
+        .testProxy()  */
+        .testFlyWeight()
         ;
     } 
 }
