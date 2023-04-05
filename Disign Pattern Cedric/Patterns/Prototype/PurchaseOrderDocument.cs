@@ -10,7 +10,7 @@ namespace Patterns.Prototype
     {
         public override void Draw()
         {
-
+            Console.WriteLine(this.Print());
         }
 
         public override AbstractDocument Duplicate()
@@ -22,7 +22,7 @@ namespace Patterns.Prototype
 
         public override string Print()
         {
-            return "<PURCHASEORDER>" + this.content + "</PURCHASEORDER>"
+            return "<PURCHASEORDER>" + this.content + "</PURCHASEORDER>";
         }
     }
 }

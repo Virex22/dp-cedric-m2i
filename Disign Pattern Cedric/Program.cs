@@ -17,7 +17,7 @@ class Program
         //.testAbstractFactory()
         //.testAdapter()
         //.testDecorator()
-        .testIterator()
+        //.testIterator()
         //.testObserver()
         //.testBridge()
         //.testState() 
@@ -29,6 +29,7 @@ class Program
         //.testStrategy()
         //.testTemplateMethod() 
         //.testComposite()
+        .testPrototype()
         ;
     } 
 }

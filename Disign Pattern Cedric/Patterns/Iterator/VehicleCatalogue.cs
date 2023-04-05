@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Patterns.Iterator
 {
-    public class VehicleCatalogue : AbstractCatalogue<Vehicle, VehicleIterator>
+    internal class VehicleCatalogue : AbstractCatalogue<Vehicle, VehicleIterator>
     {                                                           
         public override VehicleIterator Search()
         {
