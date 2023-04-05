@@ -7,23 +7,20 @@ using System.Threading.Tasks;
 
 namespace Patterns.Iterator
 {
-    class VehicleIterator : AbstractIterator<Vehicle>
+    public class VehicleIterator : AbstractIterator<Vehicle>
     {
-        private VehicleCatalogue catalogue;
-
-        public VehicleIterator(VehicleCatalogue catalogue)
+        public VehicleIterator(AbstractCatalogue<Vehicle, AbstractIterator<Vehicle>> catalogue) : base(catalogue)
         {
-            this.catalogue = catalogue;
         }
 
         public override bool End()
         {
-            return position == catalogue.GetVehicles().Count;
+            return position == ((VehicleCatalogue)this.catalogue).GetVehicles().Count;
         }
 
         public override Vehicle Item()
         {
-            return catalogue.GetVehicles()[this.position];
+            return this.catalogue.GetVehicles()[this.position];
         }
     }
 }

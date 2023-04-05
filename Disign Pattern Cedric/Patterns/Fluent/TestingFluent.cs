@@ -89,5 +89,20 @@ namespace Patterns.Fluent
             new TestComposite().Handle();
             return this;
         }
+        public TestingFluent testPrototype()
+        {
+            new TestPrototype().Handle();
+            return this;
+        }
+        public TestingFluent testCommand()
+        {
+            new TestCommand().Handle();
+            return this;
+        }
+        public TestingFluent testBuilder()
+        {
+            new TestBuilder().Handle();
+            return this;
+        }
     }
 }

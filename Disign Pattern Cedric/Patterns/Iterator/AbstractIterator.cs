@@ -10,8 +10,13 @@ namespace Patterns.Iterator
         where TElement : AbstractElement
     {
         protected int position = 0;
-        protected TElement element;
-        
+        protected AbstractCatalogue<TElement,AbstractIterator<TElement>> catalogue;
+
+        protected AbstractIterator(AbstractCatalogue<TElement, AbstractIterator<TElement>> catalogue)
+        {
+            this.catalogue = catalogue;
+        }
+
         public int Begin()
         {
             return 0;

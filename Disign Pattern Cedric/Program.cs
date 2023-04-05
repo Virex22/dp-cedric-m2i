@@ -13,22 +13,22 @@ class Program
         TestingFluent tester = new TestingFluent();
 
         tester
-        /*.testSingleton()
-        .testAbstractFactory()
-        .testAdapter()
-        .testDecorator()
+        //.testSingleton()
+        //.testAbstractFactory()
+        //.testAdapter()
+        //.testDecorator()
         .testIterator()
-        .testObserver()
-        .testBridge()
-        .testState() 
-        .testMemento()
-        .testChainOfResponsibility()
-        .testProxy()  
-        .testFlyWeight()
-        .testFacade()  
-        .testStrategy()
-        .testTemplateMethod() */
-        .testComposite()
+        //.testObserver()
+        //.testBridge()
+        //.testState() 
+        //.testMemento()
+        //.testChainOfResponsibility()
+        //.testProxy()  
+        //.testFlyWeight()
+        //.testFacade()  
+        //.testStrategy()
+        //.testTemplateMethod() 
+        //.testComposite()
         ;
     } 
 }

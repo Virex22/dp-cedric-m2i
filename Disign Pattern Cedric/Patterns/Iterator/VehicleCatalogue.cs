@@ -7,25 +7,22 @@ using System.Threading.Tasks;
 
 namespace Patterns.Iterator
 {
-    internal class VehicleCatalogue : AbstractCatalogue<Vehicle, VehicleIterator>
-    {
-        private List<Vehicle> vehicles;
-                                                                              
+    public class VehicleCatalogue : AbstractCatalogue<Vehicle, VehicleIterator>
+    {                                                           
         public override VehicleIterator Search()
         {
             VehicleIterator iterator = new VehicleIterator(this);
             return iterator;
-            
         }
 
         public void setVehicleList(List<Vehicle> vehicles)
         {
-            this.vehicles = vehicles;
+            this.elements = vehicles;
         }
         
         public List<Vehicle> GetVehicles()
         {
-            return vehicles;
+            return elements;
         } 
     }
 }
