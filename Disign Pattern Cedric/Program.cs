@@ -30,6 +30,7 @@ class Program
         //.testTemplateMethod() 
         //.testComposite()
         .testPrototype()
+        .testBuilder()
         ;
     } 
 }
